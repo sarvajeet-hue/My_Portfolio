@@ -4,11 +4,11 @@ import { FaGithub } from "react-icons/fa";
 
 export const Home = () => {
   return (
-    <div className='flex  justify-center gap-4 mt-[60px] w-[1650px] mx-auto '>
+    <div className='flex lg:flex-row md:flex-col justify-center gap-4 mt-[60px] w-[1650px] mx-auto  md:mx-auto sm:flex-col md:gap-5 sm:flex-col '>
 
 
         {/* for name and info */}
-        <div className='flex flex-col items-start mt-[110px] '>
+        <div className='flex flex-col items-start mt-[110px]  '>
             <h1 className='font-bold text-[100px] text-blue-950'>Sarvajeet Singh</h1>
 
             <div>
