@@ -1,4 +1,6 @@
 import React from 'react'
+import { FaLinkedin } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa";
 
 export const Home = () => {
   return (
@@ -13,6 +15,16 @@ export const Home = () => {
                 <p className='font-semibold text-3xl text-gray-500'>
                     A passionate individual who always thrives to work on end to end products which develop sustainable and scalable social and technical systems to create impact.
                 </p>
+
+                {/* links-part */}
+
+                <div className='mt-[30px]'>
+                    <ul className='flex items-center gap-4'>
+                        <li className='text-[50px]'><a href="https://github.com/sarvajeet-hue" target='_blank' ><FaGithub/></a></li>
+                        <li className='text-[50px]'><a href=""><FaLinkedin/></a></li>
+                        
+                    </ul>
+                </div>
                 
             </div>
         </div>
