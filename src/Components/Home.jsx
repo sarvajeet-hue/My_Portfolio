@@ -4,15 +4,15 @@ import { FaGithub } from "react-icons/fa";
 
 export const Home = () => {
   return (
-    <div className='flex lg:flex-row md:flex-col justify-center gap-4 mt-[60px] w-[1650px] mx-auto  md:mx-auto sm:flex-col md:gap-5 sm:flex-col '>
-
+    <div className='flex flex-col w-[400px] sm:flex-row sm:gap-4 sm:mx-auto  md:max-w-[500px] md:gap-10  lg:flex-row lg:gap-6 lg:max-w-[80rem] xl:max-w-[1650px]   lg-mx-auto  xl:mx-auto ' >
+{/* className='flex lg:flex-row md:flex-col justify-center gap-4 mt-[60px] w-[1650px] mx-auto  md:mx-auto  md:gap-5  ' */}
 
         {/* for name and info */}
         <div className='flex flex-col items-start mt-[110px]  '>
-            <h1 className='font-bold text-[100px] text-blue-950'>Sarvajeet Singh</h1>
+            <h1 className='font-bold text-[100px]  sm:text-[40px] md:text-[60px] lg:text-[80px] xl:text-[100px] text-blue-950'>Sarvajeet Singh</h1>
 
             <div>
-                <p className='font-semibold text-3xl text-gray-500'>
+                <p className='font-semibold text-3xl sm:text-lg md:text-xl lg:text-2xl xl:text-3xl text-gray-500'>
                     A passionate individual who always thrives to work on end to end products which develop sustainable and scalable social and technical systems to create impact.
                 </p>
 
@@ -32,7 +32,7 @@ export const Home = () => {
         {/* for picture */}
         <div>
             <svg id="b52d7e2d-d80f-4111-b6ed-d15502ee1edd" 
-            data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="711.1879" height="669.68268" 
+            data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="711.1879" className=' md:w-[400px] md:h-[400px] lg:w-[600px] lg:h-[600px] xl:w-[710px] xl:h-[710px]'   height="669.68268" 
             viewBox="0 0 711.1879 669.68268"><title>feeling_proud</title><polygon 
             points="516.326 380.018 516.326 565.013 547.27 615.443 549.625 619.279 671.722 619.279 674.189 380.018 516.326 380.018" fill="#e6e6e6"></polygon><polygon 
             points="516.326 380.018 516.326 565.013 547.27 615.443 549.169 380.018 516.326 380.018" opacity="0.1"></polygon><polygon 

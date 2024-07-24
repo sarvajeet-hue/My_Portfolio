@@ -12,7 +12,7 @@ function App() {
 
   return (
      
-      <div className='bg-blue-200 h-screen w-screen max-h-screen: sm:h-screen sm:w-screen'>
+      <div className='bg-blue-200 h-screen w-screen max-h-screen '>
         <Navbar/>
 
 
