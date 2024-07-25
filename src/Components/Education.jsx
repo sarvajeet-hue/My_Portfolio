@@ -1,15 +1,15 @@
 import React from 'react'
 
-
+import Logo from '../assets/Logo.png'
 
 
 
 export const Education = () => {
   return (
     <div className='flex flex-col w-11/12 mx-auto lg:flex lg:items-center lg:justify-center lg:w-11/12 '>
-        <div className='flex flex-col  items-center justify-between gap-4 w-full
+        <div className='flex flex-col items-center justify-center gap-4 w-full
             sm:flex sm:flex-row sm:items-center sm:justify-between sm:p-4
-            lg:flex lg:flex-row lg:items-center lg:justify-between lg:gap-5 lg:max-w-[1440px] lg:p-11 mx-auto
+            lg:flex lg:flex-row lg:items-center lg:justify-between lg:gap-5 lg:max-w-[1440px] lg:p-6 mx-auto
             
         '>
 
@@ -36,19 +36,28 @@ export const Education = () => {
 
         {/* degree-section */}
 
-        <div className='flex flex-col w-full'>
+        <div className='sm:flex items-center gap-5 justify-center border rounded-lg'>
 
 
-            <div className='w-[30%]'> 
-                <img src="" alt="" />
+            <div> 
+                <img src={Logo} alt="" width={200} height={200} />
             </div>
 
 
-            <div className='flex w-[70%]'>
-                <div className='flex items-center gap-6 p-3'>
-                    <h1 className='font-bold text-3xl'>Kiet Group Of Insititutions</h1>
-                    <p className='font-bold text-3xl'>2019-2023</p>
+            <div className='flex flex-col px-4 '>
+                <div className='flex flex-col items-start bg-yellow-600 rounded-md  '>
+                    <div className='flex items-center gap-6 p-3 '>
+                        <h1 className='font-bold text-3xl text-wrap font-serif'>Kiet Group Of Insititutions</h1>
+                        <p className='font-bold text-3xl font-serif'>2019-2023</p>
+                    </div>
+
+                    <div>
+                        <p className='p-2 font-bold text-2xl font-serif'>B.Tech. in Computer Engineering</p>
+                    </div>
                 </div>
+
+                
+
             </div>
         </div>
     </div>
