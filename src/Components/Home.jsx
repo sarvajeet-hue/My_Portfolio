@@ -4,7 +4,7 @@ import { FaGithub } from "react-icons/fa";
 
 export const Home = () => {
   return (
-    <div className='flex flex-col w-[400px] sm:flex-row sm:gap-4 sm:mx-auto  md:max-w-[500px] md:gap-10  lg:flex-row lg:gap-6 lg:max-w-[80rem] xl:max-w-[1650px]   lg-mx-auto  xl:mx-auto ' >
+    <div className="flex flex-col sm:flex-row sm:gap-4 sm:mx-auto md:max-w-[500px] mt-9 md:gap-10 lg:flex-row lg:gap-6 lg:max-w-[80rem] xl:max-w-[1650px] lg:mx-auto xl:mx-auto" >
 {/* className='flex lg:flex-row md:flex-col justify-center gap-4 mt-[60px] w-[1650px] mx-auto  md:mx-auto  md:gap-5  ' */}
 
         {/* for name and info */}
@@ -21,7 +21,7 @@ export const Home = () => {
                 <div className='mt-[30px]'>
                     <ul className='flex items-center gap-4'>
                         <li className='text-[50px]'><a href="https://github.com/sarvajeet-hue" target='_blank' ><FaGithub/></a></li>
-                        <li className='text-[50px]'><a href=""><FaLinkedin/></a></li>
+                        <li className='text-[50px]'><a href="https://www.linkedin.com/in/sarvajeet-singh-a775a0244/" target='_blank'><FaLinkedin/></a></li>
                         
                     </ul>
                 </div>
