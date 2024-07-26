@@ -85,7 +85,7 @@ export const Home = () => {
                 <div className='flex flex-col items-center gap-3 xl:mt-[117px] sm:mt-[75px] lg:mt-[116px] xl:flex xl:flex-col xl:gap-5'>
                     <h1 className='font-bold text-blue-950 text-lg sm:font-bold sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl font-serif'>Full Stack Development</h1>
 
-                    <div className='flex items-center justify-center gap-4 text-[30px] p-3 xl:gap-20 xl:text-4xl font-bold lg:gap-10 '>
+                    <div className='flex items-center justify-center gap-3 flex-wrap p-3 xl:gap-20 xl:text-4xl font-bold lg:gap-10 '>
 
                         <div className='border rounded-full p-2 bg-blue-100 flex items-center justify-center'>
                             <FaHtml5 className='text-red-400 '/>
