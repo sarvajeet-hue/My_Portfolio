@@ -1,6 +1,8 @@
 import React from 'react'
 
 import Logo from '../assets/Logo.png'
+import { SiHackerrank } from "react-icons/si";
+import { SiLeetcode } from "react-icons/si";
 
 
 
@@ -24,9 +26,15 @@ export const Education = () => {
 
 
                 {/* right-section */}
-            <div>
-                <h1 className='font-bold font-serif text-lg sm:text-lg sm:font-bold md:text-xl xl:text-3xl '>Education</h1>
+            <div className='flex flex-col gap-7'>
+                <h1 className='font-bold font-serif text-3xl sm:text-lg sm:font-bold md:text-xl xl:text-3xl '>Education</h1>
                 <p className='text-3xl font-semibold font-serif mt-7 text-wrap'>Basic Qualification and Certifcations</p>
+
+                <div className='flex gap-8 text-[50px] '>
+                    <a href=""><SiLeetcode className='text-orange-400 cursor-pointer'/></a>
+
+                    <a href="https://www.hackerrank.com/certificates/bf565688ce52" target='_blank'><SiHackerrank className='text-green-400 bg-white cursor-pointer' /></a>
+                </div>
 
             </div>
 
@@ -36,9 +44,11 @@ export const Education = () => {
 
         {/* degree-section */}
 
-        <div className='sm:flex items-center gap-5 justify-center border rounded-lg'>
+        <h1 className='font-bold text-3xl mt-5 p-2 text-center text-blue-950 font-serif sm:text-3xl xl:text-4xl'>Degree Received</h1>
 
+        <div className='sm:flex items-center gap-5 justify-center border rounded-lg mt-5'>
 
+           
             <div> 
                 <img src={Logo} alt="" width={200} height={200} />
             </div>
