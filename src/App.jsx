@@ -5,7 +5,6 @@ import { Navbar } from './Components/Navbar'
 import { Home } from './Components/Home'
 import { Projects } from './Components/Projects'
 import { Experience } from './Components/Experience'
-import { Skills } from './Components/Skills'
 import { Education } from './Components/Education'
 
 function App() {
@@ -22,7 +21,7 @@ function App() {
           <Route path='/Education'  element={<Education/>}/>
           <Route path='/Projects' element={<Projects/>} ></Route>
           <Route path='/Experience' element={<Experience/>} ></Route>
-          <Route path='/Skills' element={<Skills/>} ></Route>
+          
 
 
         </Routes>

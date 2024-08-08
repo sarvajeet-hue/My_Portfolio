@@ -8,6 +8,8 @@ import { IoLogoReact } from "react-icons/io5";
 import { FaNode } from "react-icons/fa6";
 import { SiMongodb } from "react-icons/si";
 import { FaAngular } from "react-icons/fa";
+import { SiTypescript } from "react-icons/si";
+
 
 export const Home = () => {
   return (
@@ -114,6 +116,10 @@ export const Home = () => {
                         
                         <div className='border rounded-full p-2 bg-blue-100 flex items-center justify-center'>
                             <FaAngular className='text-red-300'/>
+                        </div>
+                        
+                        <div className='border rounded-full p-2 bg-blue-100 flex items-center justify-center'>
+                          <SiTypescript className='text-blue-400 rounded-full '/>
                         </div>
                         
                         

@@ -21,7 +21,7 @@ export const Projects = () => {
               <h1 className='font-bold font-serif text-2xl text-blue-950 text-center sm:text-3xl lg:text-4xl xl:text-5xl'>Projects</h1>
 
 
-              <p className='text-2xl font-serif text-gray-500'>My projects makes use of vast variety of latest technology tools like MERN Stack And MEAN Stack Using OpenAI Tools like Open AI API. My best experience is to create Some AI basec projects and deploy them to web applications using SmarterASP.net Server.</p>
+              <p className='text-2xl font-serif text-gray-500'>My projects makes use of vast variety of latest technology tools like MERN Stack And MEAN Stack Using OpenAI Tools like Open AI API. My best experience is to create Some AI based projects and deploy them to web applications using SmarterASP.net Server.</p>
           </div>
 
         </div>

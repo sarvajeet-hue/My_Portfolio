@@ -20,7 +20,7 @@ export const Navbar = () => {
         <p className="hover:text-violet-700 cursor-pointer text-xl font-serif font-bold"><NavLink to="/Education">Education</NavLink></p>
         <p className="hover:text-violet-700 cursor-pointer text-xl font-serif font-bold"><NavLink to="/Experience">Experience</NavLink></p>
         <p className="hover:text-violet-700 cursor-pointer text-xl font-serif font-bold"><NavLink to="/Projects">Projects</NavLink></p>
-        <p className="hover:text-violet-700 cursor-pointer text-xl font-serif font-bold"><NavLink  to="/Skills" >Skills</NavLink></p>
+        
         
         <p className="hover:text-violet-700 cursor-pointer text-xl font-serif font-bold">Contact </p>
       </div>
