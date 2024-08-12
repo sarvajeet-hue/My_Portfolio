@@ -15,11 +15,11 @@ export const Navbar = () => {
       <span> &lt;</span>
        Sarvajeet
        <span >/&gt;</span></Link></h1>
-      <div className="flex flex-wrap items-center justify-center gap-3 font-sans text-blue-500 font-semibold">
-        <p className="hover:text-violet-700 cursor-pointer text-xl font-serif font-bold "><NavLink to="/">Home</NavLink></p>
-        <p className="hover:text-violet-700 cursor-pointer text-xl font-serif font-bold"><NavLink to="/Education">Education</NavLink></p>
-        <p className="hover:text-violet-700 cursor-pointer text-xl font-serif font-bold"><NavLink to="/Experience">Experience</NavLink></p>
-        <p className="hover:text-violet-700 cursor-pointer text-xl font-serif font-bold"><NavLink to="/Projects">Projects</NavLink></p>
+      <div className="flex flex-wrap items-center justify-center gap-3 font-sans text-gray-500 font-semibold">
+        <p className="hover:text-blue-700 cursor-pointer text-xl font-serif font-bold "><NavLink to="/">Home</NavLink></p>
+        <p className="hover:text-blue-700 cursor-pointer text-xl font-serif font-bold"><NavLink to="/Education">Education</NavLink></p>
+        <p className="hover:text-blue-700 cursor-pointer text-xl font-serif font-bold"><NavLink to="/Experience">Experience</NavLink></p>
+        <p className="hover:text-blue-700 cursor-pointer text-xl font-serif font-bold"><NavLink to="/Projects">Projects</NavLink></p>
         
         
         <p className="hover:text-violet-700 cursor-pointer text-xl font-serif font-bold">Contact </p>

@@ -46,7 +46,7 @@ export const Experience = () => {
 
         <div className='flex flex-col gap-4'>
           <div onClick={() => setworkHiddenClass(!workHiddenClass)} className='flex items-center justify-between border p-2 rounded-lg cursor-pointer border-blue-500 '>
-            <p className='font-semibold font-serif text-lg'>Work</p>
+            <p className='font-semibold font-serif text-lg text-gray-800'>Work</p>
             {
               workHiddenClass ? <p className='font-semibold font-serif text-lg'>-</p> : <p className='font-semibold font-serif text-lg'>+</p>
             }
@@ -54,7 +54,7 @@ export const Experience = () => {
           </div>
 
             {/* hidden-div  */}
-          <div className={`${workHiddenClass === true ? "" : "hidden"}` }>
+          <div className={` overflow-hidden transition-all duration-500 ${workHiddenClass === true ? 'max-h-[1000px] opacity-100' : 'max-h-0 opacity-0'}` }>
 
             <div className='p-3 flex flex-col items-center sm:flex sm:flex-row gap-3  sm:gap-[40px] '>
 
@@ -68,29 +68,35 @@ export const Experience = () => {
 
                 </div>
 
-                <div className='flex items-center shadow-lg shadow-black-500/50 justify-between  rounded-md p-3 w-full border-black '>
-                    <div className='flex flex-col'>
-                      <h1 className='font-serif font-bold text-blue-800 text-lg'>Software Developer</h1>
-                      <p className=' font-serif text-lg  text-black'>V2Infotech</p>
-                    </div>
-                    <div className='flex flex-col text-lg'>
-                      <p className='font-serif text-gray-500'>March 2024 - Present</p>
-                      <p className='font-serif text-gray-500'>Noida , India</p>
-                    </div>
+                <div className='flex-col shadow-lg shadow-black-500/50 items-center p-3 rounded-md '>
+                  <div className='flex items-center  justify-between  rounded-md p-3 w-full border-black '>
+                      <div className='flex flex-col'>
+                        <h1 className='font-serif font-bold text-blue-800 text-lg'>Software Developer</h1>
+                        <p className=' font-serif text-lg  text-black'>V2Infotech Technologies LLP</p>
+                      </div>
+                      <div className='flex flex-col text-lg'>
+                        <p className='font-serif text-gray-500'>March 2024 - Present</p>
+                        <p className='font-serif text-gray-500'>Noida , India</p>
+                      </div>
+                  </div>
+
+                  <div className='p-3'>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis excepturi, repudiandae nesciunt ea dicta facere molestias atque, asperiores et voluptates voluptatum assumenda, aliquid itaque magni dignissimos eaque veritatis quo laboriosam!
+                  </div>
                 </div>
             </div>
 
           </div>
 
           <div onClick={() => setInternshipHiddenClass(!internshipHiddenClass)} className='flex items-center justify-between border p-2 rounded-lg cursor-pointer border-blue-500  '>
-            <p  className='font-semibold font-serif text-lg'>Internships</p>
+            <p  className='font-semibold font-serif text-lg text-gray-800'>Internships</p>
             {
               internshipHiddenClass ? <p className='font-semibold font-serif text-lg'>-</p> : <p className='font-semibold font-serif text-lg'>+</p>
             }
           </div>
 
             {/* hidden-div  */}
-          <div  className={`${internshipHiddenClass === true ? "" : "hidden"}`}>
+          <div className=  {` overflow-hidden transition-all duration-500 ${internshipHiddenClass === true ? 'max-h-[1000px] opacity-100' : 'max-h-0 opacity-0'}`}>
               <div className='p-3 flex flex-col items-center sm:flex sm:flex-row gap-3  sm:gap-[40px] '>
 
                   {/* image-section  */}
@@ -103,15 +109,22 @@ export const Experience = () => {
 
                     </div>
 
-                    <div className='flex items-center shadow-lg shadow-black-500/50 justify-between  rounded-md p-3 w-full border-black '>
-                        <div className='flex flex-col'>
-                          <h1 className='font-serif font-bold text-blue-800 text-lg'>Full Stack Developer Intern</h1>
-                          <p className=' font-serif text-lg  text-black'>Internship & Industry Partnership Cell (IIPC)</p>
-                        </div>
-                        <div className='flex flex-col text-lg'>
-                          <p className='font-serif text-gray-500'>21st June 2022 - 31st October 2022</p>
-                          <p className='font-serif text-gray-500'>Ghaziabad , India</p>
-                        </div>
+                    <div className='shadow-lg shadow-black-500/5 rounded-md p-3'>
+                      <div className='flex items-center justify-between rounded-md p-3 w-full border-black '>
+                          <div className='flex flex-col'>
+                            <h1 className='font-serif font-bold text-blue-800 text-lg'>Full Stack Developer Intern</h1>
+                            <p className=' font-serif text-lg  text-black'>Internship & Industry Partnership Cell (IIPC)</p>
+                          </div>
+                          <div className='flex flex-col text-lg'>
+                            <p className='font-serif text-gray-500'>21st June 2022 - 31st October 2022</p>
+                            <p className='font-serif text-gray-500'>Ghaziabad , India</p>
+                          </div>
+                      </div>
+
+
+                      <div className='p-3'>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis excepturi, repudiandae nesciunt ea dicta facere molestias atque, asperiores et voluptates voluptatum assumenda, aliquid itaque magni dignissimos eaque veritatis quo laboriosam!
+                    </div>
                     </div>
               </div>
           </div>

@@ -1,6 +1,7 @@
 import React from 'react'
 
 import Logo from '../assets/Logo.png'
+import SchoolLogo from '../assets/school_logo.png'
 import { SiHackerrank } from "react-icons/si";
 import { SiLeetcode } from "react-icons/si";
 
@@ -10,8 +11,8 @@ export const Education = () => {
   return (
     <div className='flex flex-col w-11/12 mx-auto lg:flex lg:items-center lg:justify-center lg:w-11/12  p-8'>
         <div className='flex flex-col items-center justify-center gap-4 w-full
-            sm:flex sm:flex-row sm:items-center sm:justify-between sm:p-4
-            lg:flex lg:flex-row lg:items-center lg:justify-between lg:gap-5 lg:max-w-[1440px] lg:p-6 mx-auto
+            sm:flex sm:flex-row sm:items-center sm:p-4
+            lg:flex lg:flex-row lg:items-center lg:justify-between lg:gap-5 lg:p-6 mx-auto
             
         '>
 
@@ -27,7 +28,7 @@ export const Education = () => {
 
                 {/* right-section */}
             <div className='flex flex-col gap-7'>
-                <h1 className='font-bold font-serif text-3xl sm:text-lg sm:font-bold md:text-xl xl:text-3xl '>Education</h1>
+                <h1 className='font-bold font-serif text-3xl  sm:font-bold sm:text-[30px]  md:text-3xl xl:text-[50px] text-center sm:text-start '>Education</h1>
                 <p className='text-3xl font-semibold font-serif mt-7 text-wrap'>Basic Qualification and Certifcations</p>
 
                 <div className='flex gap-8 text-[50px] '>
@@ -46,23 +47,23 @@ export const Education = () => {
 
         <h1 className='font-bold text-3xl mt-5 p-2 text-center text-blue-950 font-serif sm:text-3xl xl:text-4xl'>Degree Received</h1>
 
-        <div className='sm:flex items-center gap-5 justify-center border rounded-lg mt-5 shadow-lg shadow-black '>
+        <div className='sm:flex  items-center gap-5 justify-center border rounded-lg mt-5 shadow-lg shadow-black '>
 
            
-            <div> 
+            <div className='flex items-center justify-center'> 
                 <img src={Logo} alt="" width={200} height={200} />
             </div>
 
 
             <div className='flex flex-col px-4 '>
-                <div className='flex flex-col flex-start items-start bg-yellow-600 rounded-md  '>
-                    <div className='flex flex-col sm:flex-row items-center gap-6 p-3 text-wrap '>
+                <div className='flex flex-col items-start bg-yellow-600 rounded-md  '>
+                    <div className='flex flex-col sm:flex-row items-center gap-9 p-3 text-wrap '>
                         <h1 className='font-bold text-3xl text-wrap font-serif'>Kiet Group Of Insititutions</h1>
                         <p className='font-bold text-3xl font-serif'>2019-2023</p>
                     </div>
 
                     <div className='p-2'>
-                        <p className='p-2 font-bold text-2xl font-serif'>B.Tech. in Computer Engineering</p>
+                        <p className='p-2 font-bold text-2xl font-serif'>B.Tech. in Electrical And Electronics Engineering</p>
                     </div>
                 </div>
 
@@ -70,6 +71,34 @@ export const Education = () => {
 
             </div>
         </div>
+        <h1 className='font-bold text-3xl mt-5 p-2 text-center text-blue-950 font-serif sm:text-3xl xl:text-4xl'>Class 12th</h1>
+
+        <div className='sm:flex  items-center gap-5 justify-center border rounded-lg mt-5 shadow-lg shadow-black '>
+
+           
+            <div className='flex items-center justify-center p-3'> 
+                <img src={SchoolLogo} alt="" width={150} height={150} />
+            </div>
+
+
+            <div className='flex flex-col px-4 '>
+                <div className='flex flex-col items-start bg-yellow-600 rounded-md  '>
+                    <div className='flex flex-col sm:flex-row items-center justify-between w-full gap-9 p-3 text-wrap '>
+                        <h1 className='font-bold text-3xl text-wrap font-serif'>The Ideal New Star English School</h1>
+                        <p className='font-bold text-3xl font-serif'>2017-2018</p>
+                    </div>
+
+                    <div className='p-2'>
+                        <p className='p-2 font-bold text-2xl font-serif'>PCM</p>
+                    </div>
+                </div>
+
+                
+
+            </div>
+        </div>
+
+        
     </div>
   )
 }
