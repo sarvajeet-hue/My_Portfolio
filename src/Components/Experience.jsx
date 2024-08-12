@@ -32,7 +32,7 @@ export const Experience = () => {
               <h1 className='font-bold font-serif text-2xl text-blue-950 text-center sm:text-3xl lg:text-4xl xl:text-5xl'>Experience</h1>
 
 
-              <p className='font-bold text-xl font-serif lg:text-3xl'>Work And Internship </p>
+              <p className='font-bold text-xl font-serif lg:text-3xl'>Work And Internships </p>
 
               <p className='text-2xl font-serif text-gray-500'>I have worked with V2INFOTECH as Software Developer.I have also worked with some well established companies mostly as Software Developer Intern.</p>
           </div>
