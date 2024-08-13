@@ -2,7 +2,7 @@ import React from 'react'
 
 export const Projects = () => {
   return (
-    <div className='flex w-11/12 mx-auto mt-16'>
+    <div className='flex flex-col w-11/12 mx-auto mt-16'>
       
 
        {/* top-div  */}
@@ -23,6 +23,15 @@ export const Projects = () => {
 
               <p className='text-2xl font-serif text-gray-500'>My projects makes use of vast variety of latest technology tools like MERN Stack And MEAN Stack Using OpenAI Tools like Open AI API. My best experience is to create Some AI based projects and deploy them to web applications using SmarterASP.net Server.</p>
           </div>
+
+        </div>
+
+        {/* projects-sections */}
+
+        <div className='grid grid-cols-3 gap-4 p-4'>
+          <div className='flex items-center justify-center p-3 border shadow-lg shadow-black'>Personal PortFolio</div>
+          <div className='flex items-center justify-center p-3 border shadow-lg shadow-black'>StudyNotion</div>
+          <div className='flex items-center justify-center p-3 border shadow-lg shadow-black'>Gen AI</div>
 
         </div>
 
