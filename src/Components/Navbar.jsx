@@ -27,9 +27,9 @@ export const Navbar = () => {
 
   return (
     
-    <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between px-[85px] w-full pt-4 ">
-      
-      <h1 className="font-bold text-center text-[40px] text-blue-900 cursor-pointer mb-4 sm:mb-0 font-serif"><Link to={"/"}>
+    <div className="flex flex-col sm:flex-row items-center  justify-between px-[85px] w-full pt-4 ">
+      {/* className="font-bold text-center text-[40px] text-blue-900 cursor-pointer mb-4 sm:mb-0 font-serif" */}
+      <h1 className='font-bold text-center text-[40px] text-blue-900 cursor-pointer mb-4  font-serif' ><Link to={"/"}>
       <span> &lt;</span>
        Sarvajeet
        <span >/&gt;</span></Link></h1>
