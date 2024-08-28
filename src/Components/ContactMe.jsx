@@ -36,7 +36,7 @@ export const SvgFile = () => {
 
 export const Resume = () => {
     return <div>
-        <button>
+        <button className="px-3 py-2 border rounded-lg hover:shadow-lg hover:shadow-black bg-blue-400 text-white font-semibold font-serif transition-all  ">
             See My Resume
         </button>
     </div>

@@ -499,18 +499,7 @@ export const Home = () => {
                 </div>
             </div>
 
-            <div>
-              <ul className="flex flex-col font-bold text-gray-500 gap-5 text-lg lg:text-3xl">
-                <li>
-                  Building responsive website front end using React-Redux and
-                  Angular.{" "}
-                </li>
-                <li>
-                  Creating application backend in Node, Using Express and
-                  MongoDB for Database.
-                </li>
-              </ul>
-            </div>
+            
       </div>
         
 
