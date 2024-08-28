@@ -57,12 +57,12 @@ export const Home = () => {
 
         {/* for name and info */}
         <div className="flex flex-col items-start mt-[110px] sm:mt-[58px] xl:mt-[150px] lg:mt-[120px] ">
-          <h1 className="font-bold p-2 text-xl sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl text-blue-950 font-serif ">
+          <h1 className="font-bold p-2 text-3xl sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl text-blue-950 font-serif ">
             Sarvajeet Singh
           </h1>
 
           <div>
-            <p className="font-semibold text-lg sm:text-lg md:text-xl lg:text-2xl xl:text-3xl text-gray-500 p-2 font-serif">
+            <p className=" text-lg sm:text-lg md:text-xl lg:text-2xl xl:text-3xl text-gray-500 p-2 font-serif">
               A passionate individual who always thrives to work on end to end
               products which develop sustainable and scalable social and
               technical systems to create impact
@@ -73,12 +73,12 @@ export const Home = () => {
             <div className="mt-[30px]">
               <ul className="flex items-center gap-4">
                 <li className="text-[50px]">
-                  <a href="https://github.com/sarvajeet-hue" target="_blank">
+                  <a className="text-gray-500" href="https://github.com/sarvajeet-hue" target="_blank">
                     <FaGithub />
                   </a>
                 </li>
                 <li className="text-[50px]">
-                  <a
+                  <a className="text-blue-500"
                     href="https://www.linkedin.com/in/sarvajeet-singh-a775a0244/"
                     target="_blank"
                   >
@@ -491,7 +491,7 @@ export const Home = () => {
 
 
                     <div>
-                        <ul className='flex flex-col font-bold text-gray-500 gap-5 text-lg lg:text-3xl'>
+                        <ul className='text-lg sm:text-lg md:text-xl lg:text-2xl xl:text-3xl text-gray-500 p-2 font-serif'>
                             <li>Building responsive website front end using React-Redux and Angular. </li>
                             <li>Creating application backend in Node, Using Express and MongoDB for Database.</li>
                         </ul>

@@ -138,7 +138,7 @@ export const Experience = () => {
 
         
 
-            <Footer/>
+        <Footer/>
       
     </div>
 
