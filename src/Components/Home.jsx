@@ -10,6 +10,7 @@ import { SiMongodb } from "react-icons/si";
 import { FaAngular } from "react-icons/fa";
 import { SiTypescript } from "react-icons/si";
 import { Footer } from './Footer';
+import ProfileLogo from "../assets/Logo/ProfileLogo";
 
 
 export const Home = () => {
@@ -91,7 +92,7 @@ export const Home = () => {
 
         {/* for picture */}
         <div className="w-full">
-          <ProfileLogo />
+          <ProfileLogo/>
         </div>
       </div>
 
