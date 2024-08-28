@@ -9,46 +9,44 @@ import { FaNode } from "react-icons/fa6";
 import { SiMongodb } from "react-icons/si";
 import { FaAngular } from "react-icons/fa";
 import { SiTypescript } from "react-icons/si";
-import { Footer } from './Footer';
+import { Footer } from "./Footer";
 import ProfileLogo from "../assets/Logo/ProfileLogo";
 
-
 export const Home = () => {
-
-    const iconsArray = [
-        {
-            icon : <FaHtml5/>,
-            design : "text-red-400"
-        },
-        {
-            icon : <SiCss3/>, 
-            design : "text-blue-700"
-        },
-        {
-            icon : <IoLogoJavascript/>, 
-            design : "text-yellow-400"
-        },
-        {
-            icon : <IoLogoReact/>, 
-            design : "text-blue-400"
-        },
-        {
-            icon : <FaNode/>, 
-            design : "text-green-600"
-        },
-        {
-            icon : <SiMongodb/>, 
-            design : "text-green-700"
-        },
-        {
-            icon : <FaAngular/>, 
-            design : "text-red-300"
-        },
-        {
-            icon : <SiTypescript/>, 
-            design : "text-blue-400"
-        },
-    ]
+  const iconsArray = [
+    {
+      icon: <FaHtml5 />,
+      design: "text-red-400",
+    },
+    {
+      icon: <SiCss3 />,
+      design: "text-blue-700",
+    },
+    {
+      icon: <IoLogoJavascript />,
+      design: "text-yellow-400",
+    },
+    {
+      icon: <IoLogoReact />,
+      design: "text-blue-400",
+    },
+    {
+      icon: <FaNode />,
+      design: "text-green-600",
+    },
+    {
+      icon: <SiMongodb />,
+      design: "text-green-700",
+    },
+    {
+      icon: <FaAngular />,
+      design: "text-red-300",
+    },
+    {
+      icon: <SiTypescript />,
+      design: "text-blue-400",
+    },
+  ];
 
   return (
     <div className="flex flex-col w-11/12 p-2 mx-auto">
@@ -73,12 +71,17 @@ export const Home = () => {
             <div className="mt-[30px]">
               <ul className="flex items-center gap-4">
                 <li className="text-[50px]">
-                  <a className="text-gray-500" href="https://github.com/sarvajeet-hue" target="_blank">
+                  <a
+                    className="text-gray-500"
+                    href="https://github.com/sarvajeet-hue"
+                    target="_blank"
+                  >
                     <FaGithub />
                   </a>
                 </li>
                 <li className="text-[50px]">
-                  <a className="text-blue-500"
+                  <a
+                    className="text-blue-500"
                     href="https://www.linkedin.com/in/sarvajeet-singh-a775a0244/"
                     target="_blank"
                   >
@@ -92,7 +95,7 @@ export const Home = () => {
 
         {/* for picture */}
         <div className="w-full">
-          <ProfileLogo/>
+          <ProfileLogo />
         </div>
       </div>
 
@@ -459,52 +462,35 @@ export const Home = () => {
             </h1>
 
             <div className="flex items-center justify-center gap-3 flex-wrap p-3 xl:gap-20 xl:text-4xl font-bold lg:gap-10 ">
-              <div className="border rounded-full p-2 bg-blue-100 flex items-center justify-center">
-                <FaHtml5 className="text-red-400 " />
-              </div>
-
-              <div className="border rounded-full p-2 bg-blue-100 flex items-center justify-center">
-                <SiCss3 className="text-blue-700" />
-              </div>
-
-              <div className="border rounded-full p-2 bg-blue-100 flex items-center justify-center">
-                <IoLogoJavascript className="text-yellow-400" />
-              </div>
-
-              <div className="border rounded-full p-2 bg-blue-100 flex items-center justify-center">
-                <IoLogoReact className="text-blue-400" />
-              </div>
-
-                        {
-                            iconsArray.map((icon , index) => {
-                                return (
-                                    <div key={index} className='border rounded-full p-2 bg-blue-100 flex items-center justify-center'>
-                                        <div className={`${icon?.design}`}>
-                                            {icon?.icon}
-                                        </div>
-                                    </div>
-                                )
-                            })
-                        }
-
-                    </div>
-
-
-                    <div>
-                        <ul className='text-lg sm:text-lg md:text-xl lg:text-2xl xl:text-3xl text-gray-500 p-2 font-serif'>
-                            <li>Building responsive website front end using React-Redux and Angular. </li>
-                            <li>Creating application backend in Node, Using Express and MongoDB for Database.</li>
-                        </ul>
-                    </div>
-                </div>
+              {iconsArray.map((icon, index) => {
+                return (
+                  <div
+                    key={index}
+                    className="border rounded-full p-2 bg-blue-100 flex items-center justify-center"
+                  >
+                    <div className={`${icon?.design}`}>{icon?.icon}</div>
+                  </div>
+                );
+              })}
             </div>
 
-            
+            <div>
+              <ul className="text-lg sm:text-lg md:text-xl lg:text-2xl xl:text-3xl text-gray-500 p-2 gap-3 font-serif">
+                <li>
+                  Building responsive website front end using React-Redux and
+                  Angular.{" "}
+                </li>
+                <li>
+                  Creating application backend in Node, Using Express and
+                  MongoDB for Database.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </div>
-        
 
-      <Footer/>
-
+      <Footer />
     </div>
   );
 };
