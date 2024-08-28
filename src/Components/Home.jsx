@@ -9,9 +9,46 @@ import { FaNode } from "react-icons/fa6";
 import { SiMongodb } from "react-icons/si";
 import { FaAngular } from "react-icons/fa";
 import { SiTypescript } from "react-icons/si";
+import { Footer } from './Footer';
 
 
 export const Home = () => {
+
+    const iconsArray = [
+        {
+            icon : <FaHtml5/>,
+            design : "text-red-400"
+        },
+        {
+            icon : <SiCss3/>, 
+            design : "text-blue-700"
+        },
+        {
+            icon : <IoLogoJavascript/>, 
+            design : "text-yellow-400"
+        },
+        {
+            icon : <IoLogoReact/>, 
+            design : "text-blue-400"
+        },
+        {
+            icon : <FaNode/>, 
+            design : "text-green-600"
+        },
+        {
+            icon : <SiMongodb/>, 
+            design : "text-green-700"
+        },
+        {
+            icon : <FaAngular/>, 
+            design : "text-red-300"
+        },
+        {
+            icon : <SiTypescript/>, 
+            design : "text-blue-400"
+        },
+    ]
+
   return (
     
     
@@ -89,41 +126,17 @@ export const Home = () => {
 
                     <div className='flex items-center justify-center gap-3 flex-wrap p-3 xl:gap-20 xl:text-4xl font-bold lg:gap-10 '>
 
-                        <div className='border rounded-full p-2 bg-blue-100 flex items-center justify-center'>
-                            <FaHtml5 className='text-red-400 '/>
-                        </div>
-
-                        <div  className='border rounded-full p-2 bg-blue-100 flex items-center justify-center'>
-                            <SiCss3 className='text-blue-700'/>
-                        </div>
-
-                        <div className='border rounded-full p-2 bg-blue-100 flex items-center justify-center'>
-                            <IoLogoJavascript className='text-yellow-400'/>
-                        </div>
-                        
-                        <div className='border rounded-full p-2 bg-blue-100 flex items-center justify-center'>
-                            <IoLogoReact className='text-blue-400'/>
-                        </div>
-                        
-                        <div className='border rounded-full p-2 bg-blue-100 flex items-center justify-center'>
-                            <FaNode className='text-green-600'/>
-                        </div>
-
-                        <div className='border rounded-full p-2 bg-blue-100 flex items-center justify-center'>
-                            <SiMongodb className='text-green-700'/>
-                        </div>
-                        
-                        
-                        <div className='border rounded-full p-2 bg-blue-100 flex items-center justify-center'>
-                            <FaAngular className='text-red-300'/>
-                        </div>
-                        
-                        <div className='border rounded-full p-2 bg-blue-100 flex items-center justify-center'>
-                          <SiTypescript className='text-blue-400 rounded-full '/>
-                        </div>
-                        
-                        
-
+                        {
+                            iconsArray.map((icon , index) => {
+                                return (
+                                    <div key={index} className='border rounded-full p-2 bg-blue-100 flex items-center justify-center'>
+                                        <div className={`${icon?.design}`}>
+                                            {icon?.icon}
+                                        </div>
+                                    </div>
+                                )
+                            })
+                        }
 
                     </div>
 
@@ -137,6 +150,8 @@ export const Home = () => {
                 </div>
             </div>
         </div>
+
+        <Footer/>
 
     </div>
 

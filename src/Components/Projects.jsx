@@ -1,4 +1,5 @@
 import React from 'react'
+import { Footer } from './Footer'
 
 export const Projects = () => {
 
@@ -32,6 +33,7 @@ export const Projects = () => {
 
 
         <ProjectSection/>
+        <Footer/>
 
        
 
@@ -66,8 +68,8 @@ export function ProjectSection(){
     <div className='grid  sm:grid-cols-3 gap-4 p-4'>
     {
       Projects_array.map((data , index) => {
-        return <a target='__blank' href={data?.link}> 
-          <div className='border rounded-lg shadow-lg shadow-black p-3 cursor-pointer' key={index}>
+        return <a key={index} target='__blank' href={data?.link}> 
+          <div className='border rounded-lg shadow-lg shadow-black p-3 cursor-pointer' >
             <h1 className='font-bold text-xl font-serif text-slate-600 py-3'>{data?.name}</h1>
             {/* description */}
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore vel delectus, voluptatibus veritatis iusto dolor aperiam expedita suscipit earum pariatur tenetur quis sit unde cumque aut perferendis ut fuga! Obcaecati?</p>

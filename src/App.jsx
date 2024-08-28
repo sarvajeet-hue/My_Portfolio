@@ -6,9 +6,12 @@ import { Home } from './Components/Home'
 import { Projects } from './Components/Projects'
 import { Experience } from './Components/Experience'
 import { Education } from './Components/Education'
+import { ContactMe } from './Components/ContactMe'
+
 
 function App() {
-  
+
+
 
   return (
      
@@ -21,6 +24,7 @@ function App() {
           <Route path='/Education'  element={<Education/>}/>
           <Route path='/Projects' element={<Projects/>} ></Route>
           <Route path='/Experience' element={<Experience/>} ></Route>
+          <Route path='/ContactMe' element = {<ContactMe/>} />
           
 
 

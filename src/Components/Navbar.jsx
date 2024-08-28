@@ -22,6 +22,10 @@ export const Navbar = () => {
     {
       tag : "Projects", 
       path : "/Projects"
+    }, 
+    {
+      tag : "Contact Me", 
+      path : "/ContactMe"
     }
   ]
 
@@ -33,34 +37,6 @@ export const Navbar = () => {
       <span> &lt;</span>
        Sarvajeet
        <span >/&gt;</span></Link></h1>
-
-      {/* 
-      <div className="flex flex-wrap items-center justify-center gap-3 font-sans text-gray-500 font-semibold">
-        <p className="hover:text-blue-700 cursor-pointer text-xl font-serif font-bold "><NavLink  to="/">Home</NavLink></p>
-        <p className="hover:text-blue-700 cursor-pointer text-xl font-serif font-bold"><NavLink to="/Education">Education</NavLink></p>
-        <p className="hover:text-blue-700 cursor-pointer text-xl font-serif font-bold"><NavLink to="/Experience">Experience</NavLink></p>
-        <p className="hover:text-blue-700 cursor-pointer text-xl font-serif font-bold"><NavLink to="/Projects">Projects</NavLink></p>
-        
-        
-        <p className="hover:text-violet-700 cursor-pointer text-xl font-serif font-bold">Contact </p>
-      </div> */}
-
-      {/* <div className="flex flex-col items-center sm:flex-row flex-wrap  justify-center gap-3 font-sans text-gray-500 font-semibold">
-        {array_of_Tags.map((data , index) => {
-          return <div key={index}>
-            
-                <NavLink
-                
-                 to={data?.path}>
-                   <p className="hover:text-white px-3 py-2 hover:bg-blue-400 rounded-lg transition-all duration-75 cursor-pointer text-xl font-serif font-bold ">
-                    {data?.tag}
-                  </p>
-                </NavLink>
-            </div>
-      
-        })}
-      </div> 
-      */}
 
 
 
