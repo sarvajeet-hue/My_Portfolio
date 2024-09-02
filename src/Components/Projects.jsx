@@ -5,12 +5,15 @@ import { office_projects, Projects_array } from "../Data/Data";
 
 export const Projects = () => {
   const [professionalProjects, setProfessionalProjects] = useState(false);
+  const [projectSelection , setprojectSelection] = useState(true)
 
   function implementFunction() {
     if (professionalProjects) {
       setProfessionalProjects(false);
+      setprojectSelection(true)
     } else {
       setProfessionalProjects(true);
+      setprojectSelection(false)
     }
   }
 
@@ -662,7 +665,9 @@ export const Projects = () => {
       </div>
 
       <PrimaryButton implementFunction={implementFunction} className={"mt-4"}>
-        More Projects
+        {
+          projectSelection ? "More Projects" : "Less Projects"
+        }
       </PrimaryButton>
 
       {professionalProjects ? (
