@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
 import { Footer } from "./Footer";
 import { PrimaryButton } from "./PrimaryButton";
 import { office_projects, Projects_array } from "../Data/Data";
@@ -7,6 +7,10 @@ export const Projects = () => {
   const [professionalProjects, setProfessionalProjects] = useState(false);
   const [projectSelection , setprojectSelection] = useState(true)
 
+  const sectionRef  = useRef(null)
+  
+
+
   function implementFunction() {
     if (professionalProjects) {
       setProfessionalProjects(false);
@@ -14,8 +18,18 @@ export const Projects = () => {
     } else {
       setProfessionalProjects(true);
       setprojectSelection(false)
+
+    }
+    
+  }
+
+  function scrolltoTarget(){
+    if(sectionRef.current){
+      sectionRef.current.scrollIntoView({behavior : "smooth"})
     }
   }
+  
+  
 
   return (
     <div className="w-full flex flex-col justify-center items-center ">
@@ -660,11 +674,11 @@ export const Projects = () => {
           <h1 className="font-bold text-2xl pt-3 font-serif text-gray-500 text-center sm:text-4xl">
             Personal Projects
           </h1>
-          <PersonalProjectContainer data={Projects_array} />
+          <PersonalProjectContainer data={Projects_array} sectionRef={sectionRef} />
         </ProjectSection>
       </div>
-
-      <PrimaryButton implementFunction={implementFunction} className={"mt-4"}>
+ 
+      <PrimaryButton  implementFunction={implementFunction} className={"mt-4"}>
         {
           projectSelection ? "More Projects" : "Less Projects"
         }
@@ -676,7 +690,7 @@ export const Projects = () => {
             <h1 className="font-bold text-2xl mt-3 font-serif text-gray-500 text-center sm:text-4xl">
               Professional Projects
             </h1>
-            <PersonalProjectContainer data={office_projects} />
+            <PersonalProjectContainer data={office_projects} sectionRef={sectionRef} />
           </ProjectSection>
         </div>
       ) : (
@@ -692,9 +706,9 @@ export function ProjectSection({ children }) {
   return <div className="w-11/12 mx-auto">{children}</div>;
 }
 
-export const PersonalProjectContainer = ({ data }) => {
+export const PersonalProjectContainer = ({ data , sectionRef }) => {
   return (
-    <div className="grid  sm:grid-cols-3 gap-4 p-4">
+    <div ref={sectionRef}  className="grid  sm:grid-cols-3 gap-4 p-4">
       {data.map((data, index) => {
         return (
           <a key={index} target="_blank" href={data?.link}>
