@@ -8,16 +8,16 @@ export const Experience = () => {
   const [internshipHiddenClass, setInternshipHiddenClass] = useState(false);
 
   return (
-    <div className="w-11/12 flex flex-col gap-2 p-3 sm:flex-col mx-auto mt-16">
+    <div className="max-w-7xl mx-auto px-6 font-mono">
       {/* top-div  */}
       <div
         className="flex flex-col  gap-5  sm:flex sm:flex-row w-full 
-        xl:gap-[110px]
+        xl:gap-[110px] mt-[60px]
          "
       >
         {/* image-section  */}
 
-        <div className="flex ">
+        <div className="flex mt-[100px] ">
           <svg
             id="bf56719a-dd30-4b09-833f-7c41eeee086b"
             data-name="Layer 1"
@@ -410,11 +410,11 @@ export const Experience = () => {
         </div>
 
         <div className="flex flex-col items-start justify-center gap-6">
-          <h1 className="font-bold font-serif text-2xl text-blue-950 text-center sm:text-3xl lg:text-4xl xl:text-5xl">
+          <h1 className="font-bold font-serif text-2xl text-white text-center sm:text-3xl lg:text-4xl xl:text-5xl">
             Experience
           </h1>
 
-          <p className="font-bold text-xl font-serif lg:text-3xl">
+          <p className="font-bold text-xl font-serif lg:text-3xl text-white">
             Work And Internships{" "}
           </p>
 
@@ -426,12 +426,12 @@ export const Experience = () => {
         </div>
       </div>
 
-      <div className="flex flex-col gap-4">
+      <div className="flex flex-col gap-4 text-white mt-4">
         <div
           onClick={() => setworkHiddenClass(!workHiddenClass)}
           className="flex items-center justify-between border p-2 rounded-lg cursor-pointer border-blue-500 "
         >
-          <p className="font-semibold font-serif text-lg text-gray-800">Work</p>
+          <p className="font-semibold font-serif text-lg text-white">Work</p>
           {workHiddenClass ? (
             <p className="font-semibold font-serif text-lg">-</p>
           ) : (
@@ -456,13 +456,13 @@ export const Experience = () => {
             {/* circle-div  */}
             <div className="sm:w-[20px] sm:h-[20px] bg-blue-400 sm:rounded-full"></div>
 
-            <div className="flex-col shadow-lg shadow-black-500/50 items-center p-3 rounded-md ">
-              <div className="flex items-center  justify-between  rounded-md p-3 w-full border-black ">
+            <div className="flex-col shadow-lg text-white shadow-black-500/50 items-center p-3 rounded-md  ">
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-3">
                 <div className="flex flex-col">
-                  <h1 className="font-serif font-bold text-blue-800 text-lg">
+                  <h1 className="font-serif font-bold text-blue-800 text-3xl">
                     Software Developer
                   </h1>
-                  <p className=" font-serif text-lg  text-black">
+                  <p className=" font-serif text-lg  text-white">
                     V2Infotech Technologies LLP
                   </p>
                 </div>
@@ -474,11 +474,11 @@ export const Experience = () => {
                 </div>
               </div>
 
-              <div className="p-3">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis
-                excepturi, repudiandae nesciunt ea dicta facere molestias atque,
-                asperiores et voluptates voluptatum assumenda, aliquid itaque
-                magni dignissimos eaque veritatis quo laboriosam!
+              <div className="mt-4">
+                V2 Infotech is a Web Solutions Company based in Noida. They deal
+                with custom website solutions consisting of web design and
+                development, SEO, SEM, analytics, social strategy and conversion
+                optimization.
               </div>
             </div>
           </div>
@@ -488,7 +488,7 @@ export const Experience = () => {
           onClick={() => setInternshipHiddenClass(!internshipHiddenClass)}
           className="flex items-center justify-between border p-2 rounded-lg cursor-pointer border-blue-500  "
         >
-          <p className="font-semibold font-serif text-lg text-gray-800">
+          <p className="font-semibold font-serif text-lg text-white">
             Internships
           </p>
           {internshipHiddenClass ? (
@@ -516,7 +516,7 @@ export const Experience = () => {
             <div className="sm:w-[20px] sm:h-[20px] bg-blue-400 sm:rounded-full"></div>
 
             <div className="shadow-lg shadow-black-500/5 rounded-md p-3">
-              <div className="flex items-center justify-between rounded-md p-3 w-full border-black ">
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-3 ">
                 <div className="flex flex-col">
                   <h1 className="font-serif font-bold text-blue-800 text-lg">
                     Full Stack Developer Intern
@@ -533,7 +533,7 @@ export const Experience = () => {
                 </div>
               </div>
 
-              <div className="p-3">
+              <div className="mt-4">
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis
                 excepturi, repudiandae nesciunt ea dicta facere molestias atque,
                 asperiores et voluptates voluptatum assumenda, aliquid itaque
