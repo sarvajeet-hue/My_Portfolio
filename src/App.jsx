@@ -1,5 +1,5 @@
 
-
+import { useEffect } from 'react'
 import { Route, Routes } from 'react-router-dom'
 import { Navbar } from './Components/Navbar'
 import { Home } from './Components/Home'
@@ -7,15 +7,27 @@ import { Projects } from './Components/Projects'
 import { Experience } from './Components/Experience'
 import { Education } from './Components/Education'
 import { ContactMe } from './Components/ContactMe'
+import  axios  from 'axios'
+
+
+
+  
+async function data (){
+  const response =  await axios.get('http://localhost/wp-demo/?page_id=11')
+  console.log("response:" , response)
+} 
 
 
 function App() {
+  useEffect( () => {
+    data()  
+  } , [])
 
 
 
   return (
      
-      <div className='bg-blue-200 h-screen w-screen max-h-screen sm:h-screen sm:w-screen lg:w-screen lg:h-screen xl:w-screen xl:h-screen '>
+      <div className='px-8'>
         <Navbar/>
 
 
